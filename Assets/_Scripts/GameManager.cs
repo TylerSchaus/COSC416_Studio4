@@ -1,4 +1,5 @@
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 
 public class GameManager : SingletonMonoBehavior<GameManager>
@@ -36,7 +37,7 @@ public class GameManager : SingletonMonoBehavior<GameManager>
         isSettingsMenuActive = true; 
     }
 
-    private void DisableSettingsMenu()
+    public void DisableSettingsMenu()
     {
         Time.timeScale = 1f;
         settingsMenu.SetActive(false);
@@ -49,5 +50,14 @@ public class GameManager : SingletonMonoBehavior<GameManager>
     {
         score++;
         coinCounter.UpdateScore(score);
+    }
+
+    public void QuitGame()
+    {
+# if UNITY_EDITOR
+        EditorApplication.isPlaying = false;
+# else
+        Application.Quit();
+# endif
     }
 }
