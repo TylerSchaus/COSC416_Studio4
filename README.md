@@ -2,9 +2,15 @@
 
 A simple third person character controller in Unity
 
-## Demo
+## Demo of my Implementation
 
-https://github.com/user-attachments/assets/91485280-b86b-4c82-ac11-2a5107730e94
+https://drive.google.com/file/d/1lDW5AxRAkK09pZIpjEpP4Smu74Inambc/view?usp=drive_link
+
+Google Drive Link, please let me know if any issues with it. 
+
+
+This implementation includes all UI components, including updated coin tracker, settings menu, and physical controls panel. I have never forked a repo and worked from it. The main branch on this repo should contain my completed project, holefully all worked out correctly.
+
 
 ## Cloning & Setting Up the Project
 
